@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Foodler</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="delivery">Delivery</string>
+    <string name="dining">Dining</string>
+    <string name="orders">Orders</string>
+    <string name="favorite">Favorite</string>
+    <string name="search">search</string>
+    <string name="mango_jamshedpur">Mango, Jamshedpur</string>
+    <string name="dimna">Dimna</string>
+    <string name="pizza">Pizza</string>
+    <string name="min">35-40 min</string>
+    <string name="_50_off_up_to_100">50% OFF up to 100</string>
+    <string name="rating_text">4.0</string>
+    <string name="laziz_pizza">Laziz Pizza</string>
+    <string name="all_restaurants">ALL RESTAURANTS</string>
+    <string name="what_s_on_your_mind">WHAT\'S ON YOUR MIND?</string>
+    <string name="nearest">Nearest</string>
+</resources>

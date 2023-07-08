@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    android:elevation="4dp"
+    app:cardCornerRadius="25dp"
+    app:cardElevation="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/dv_ivBanner"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_my_profile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/rating_background"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="2dp"
+            android:paddingTop="3dp"
+            android:paddingEnd="2dp"
+            android:paddingBottom="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dv_ivBanner">
+
+
+            <TextView
+                android:id="@+id/dv_tvRestaurantRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="1dp"
+                android:text="@string/rating_text"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginEnd="4dp"
+                android:src="@drawable/ic_star" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/dv_tvRestaurantName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/laziz_pizza"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dv_ivBanner" />
+
+        <TextView
+            android:id="@+id/dv_tvFoodName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/pizza"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@id/dv_tvRestaurantName"
+            app:layout_constraintTop_toBottomOf="@+id/dv_tvRestaurantName" />
+
+
+        <ImageView
+            android:id="@+id/dv_ivStopwatch"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/ic_stopwatch"
+            app:layout_constraintStart_toStartOf="@id/dv_tvFoodName"
+            app:layout_constraintTop_toBottomOf="@id/dv_tvFoodName" />
+
+        <TextView
+            android:id="@+id/dv_tvExpectedTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:text="@string/min"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/dv_ivStopwatch"
+            app:layout_constraintStart_toEndOf="@+id/dv_ivStopwatch"
+            app:layout_constraintTop_toTopOf="@+id/dv_ivStopwatch" />
+
+
+        <ImageView
+            android:id="@+id/dv_ivDottedLine"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/dotted_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dv_ivStopwatch" />
+
+
+        <ImageView
+            android:id="@+id/dv_offerIcon"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="13dp"
+            android:src="@drawable/ic_discount"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/dv_ivStopwatch"
+            app:layout_constraintTop_toBottomOf="@id/dv_ivDottedLine"
+            app:tint="#8255D1" />
+
+        <TextView
+            android:id="@+id/dv_tvDiscount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/_50_off_up_to_100"
+            android:textColor="#FF8255D1"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/dv_offerIcon"
+            app:layout_constraintStart_toEndOf="@id/dv_offerIcon"
+            app:layout_constraintTop_toTopOf="@id/dv_offerIcon" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

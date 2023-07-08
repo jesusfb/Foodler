@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="appColor">#CD5031</color>
+
+    <color name="colorAccent">#4d5df4</color>
+    <color name="drawable_color">#9A9037</color>
+</resources>

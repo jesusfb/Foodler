@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/menu_item"
+        android:layout_width="90dp"
+        android:layout_height="74dp"
+        android:src="@drawable/ic_beef"
+        />
+    <TextView
+        android:id="@+id/menu_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Beef"
+        android:textSize="13sp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
