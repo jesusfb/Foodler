@@ -103,41 +103,50 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="12dp"
-            android:layout_marginBottom="4dp"
-            app:cardElevation="3dp"
-            app:cardCornerRadius="12dp">
+            android:layout_height="43dp"
+            android:layout_margin="12dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="3dp">
 
-            <EditText
-                android:layout_width="332dp"
-                android:layout_height="43dp"
-                android:background="@drawable/edittext_background"
-                android:drawableStart="@drawable/ic_search"
-                android:drawablePadding="8dp"
-                android:drawableTint="@color/appColor"
-                android:hint="Search Your Coke"
-                android:inputType="text"
-                android:padding="8dp"
-                android:textColor="@color/black"
-                android:textSize="14sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-            <View
-                android:layout_width="0.8dp"
-                android:layout_height="28dp"
-                android:layout_gravity="end|center"
-                android:layout_marginEnd="42dp"
-                android:background="#875B5B" />
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_search"
+                    app:tint="@color/drawable_color" />
 
+                <TextSwitcher
+                    android:id="@+id/textSwitcher"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:inAnimation="@anim/slide_in_down"
+                    android:outAnimation="@anim/slide_out_up"
+                    android:layout_marginStart="12dp"/>
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end|center"
-                android:layout_marginEnd="10dp"
-                android:src="@drawable/ic_mic" />
+                <View
+                    android:layout_width="0.8dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="end|center"
+                    android:background="#875B5B"
+                    android:layout_marginEnd="6dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center"
+                    android:src="@drawable/ic_mic"
+                    android:layout_marginEnd="10dp" />
+
+            </LinearLayout>
+
         </androidx.cardview.widget.CardView>
 
     </com.google.android.material.appbar.AppBarLayout>
@@ -146,8 +155,9 @@
     <com.amar.library.ui.StickyScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:stickyHeader="@+id/rv_filters"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        android:overScrollMode="never"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:stickyHeader="@+id/rv_filters">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -200,8 +210,7 @@
                 android:id="@+id/rv_menu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:overScrollMode="never"
-                tools:listitem="@layout/menu_item_list" />
+                android:overScrollMode="never" />
 
 
             <RelativeLayout
@@ -231,25 +240,25 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_filters"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:isScrollContainer="false" />
 
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="233 restaurants delivering to you"
-                android:textSize="13sp"
-                android:layout_margin="8dp"
-                android:textStyle="bold"
                 android:layout_gravity="center"
-                android:textColor="#6F7A80"/>
+                android:layout_margin="8dp"
+                android:text="@string/restaurants_delivering"
+                android:textColor="#6F7A80"
+                android:textSize="13sp"
+                android:textStyle="bold" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_restaurants"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:overScrollMode="never"
-                tools:listitem="@layout/delivery_item_list" />
+                android:overScrollMode="never" />
 
         </LinearLayout>
     </com.amar.library.ui.StickyScrollView>

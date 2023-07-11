@@ -10,4 +10,19 @@
         <item name="android:colorControlHighlight">@android:color/transparent</item>
     </style>
 
+    <style name="BottomSheetRadioButtonStyle" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
+        <item name="android:button">@null</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="BottomSheetLinearLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+    </style>
+
+
 </resources>

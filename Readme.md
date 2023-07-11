@@ -7,6 +7,13 @@
 
 Foodler app is inspired by apps like "Zomato". It allows users to explore local restaurants and search for their favorite Foods. Get food delivery to your doorstep from thousands of amazing local and national restaurants. It offers the convenience of doorstep food delivery from a vast selection of exceptional local and national eateries.
 
+## Screenshots
+
+<p float="left">
+  <img src="screenshots/screen_delivery.jpg"  width="200"  />
+  <img src="screenshots/screen_delivery2.jpg"  width="200"  />
+</p>
+
 ## Development Setup
 
 Before you begin, you should have already downloaded the Android Studio SDK and set it up correctly. You can find a guide on how to do this here: [Setting up Android Studio](http://developer.android.com/sdk/installing/index.html?pkg=studio).

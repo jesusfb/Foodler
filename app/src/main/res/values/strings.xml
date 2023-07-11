@@ -10,11 +10,14 @@
     <string name="mango_jamshedpur">Mango, Jamshedpur</string>
     <string name="dimna">Dimna</string>
     <string name="pizza">Pizza</string>
-    <string name="min">35-40 min</string>
+    <string name="min">35–40 min</string>
     <string name="_50_off_up_to_100">50% OFF up to 100</string>
     <string name="rating_text">4.0</string>
     <string name="laziz_pizza">Laziz Pizza</string>
     <string name="all_restaurants">ALL RESTAURANTS</string>
     <string name="what_s_on_your_mind">WHAT\'S ON YOUR MIND?</string>
     <string name="nearest">Nearest</string>
+    <string name="restaurants_delivering">233 restaurants delivering to you</string>
+    <string name="search_your_coke">Search Your Coke</string>
+    <string name="sample_text">Relevance</string>
 </resources>
